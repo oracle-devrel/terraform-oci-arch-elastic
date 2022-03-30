@@ -1,3 +1,38 @@
-// see https://github.com/oracle-devrel/action-release-zip-maker for docs
 [
-]
+    {
+      "action": "create_zip",
+      "file_name": "terraform-oci-arch-elastic-stack-latest.zip",
+      "files": [
+        {
+          "src_pattern": "cluster/single-ad/*.tf",
+          "dst_path": ".",
+          "exclude": [
+            "cluster/single-ad/provider.tf",
+            "cluster/single-ad/variables.tf"
+          ]
+        },
+        {
+          "src": "LICENSE"
+        },
+        {
+          "src": "cluster/single-ad/schema.yaml",
+          "dst": "schema.yaml"
+        },
+        {
+          "src": "cluster/single-ad/orm/variables.tf",
+          "dst": "variables.tf"
+        },
+        {
+          "src": "cluster/single-ad/orm/provider.tf",
+          "dst": "provider.tf"
+        },
+        {
+            "src_pattern": "cluster/single-ad/scripts/*"
+        }
+      ]
+    },
+    {
+      "action": "upload_file",
+      "file_name": "terraform-oci-arch-elastic-stack-latest.zip"
+    }
+  ]

@@ -27,7 +27,8 @@
           "dst": "provider.tf"
         },
         {
-            "src_pattern": "single-ad/scripts/*"
+          "src_pattern": "single-ad/scripts/*",
+          "dst_path": "scripts/"
         }
       ]
     },
@@ -63,7 +64,8 @@
           "dst": "provider.tf"
         },
         {
-            "src_pattern": "multi-ad/scripts/*"
+          "src_pattern": "multi-ad/scripts/*",
+          "dst_path": "scripts/"
         }
       ]
     },
@@ -99,7 +101,8 @@
           "dst": "provider.tf"
         },
         {
-            "src_pattern": "single/scripts/*"
+          "src_pattern": "single/scripts/*",
+          "dst_path": "scripts/"
         }
       ]
     },

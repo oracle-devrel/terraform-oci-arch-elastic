@@ -28,7 +28,7 @@
         },
         {
           "src_pattern": "single-ad/scripts/*",
-          "dst_path": "scripts/"
+          "dst_path": "."
         }
       ]
     },
@@ -65,7 +65,7 @@
         },
         {
           "src_pattern": "multi-ad/scripts/*",
-          "dst_path": "scripts/"
+          "dst_path": "."
         }
       ]
     },
@@ -102,7 +102,7 @@
         },
         {
           "src_pattern": "single/scripts/*",
-          "dst_path": "scripts/"
+          "dst_path": "."
         }
       ]
     },

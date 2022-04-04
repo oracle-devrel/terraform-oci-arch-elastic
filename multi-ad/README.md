@@ -1,4 +1,4 @@
-# terraform-oci-arch-elastic (cluster/multi-ad)
+# terraform-oci-arch-elastic (multi-ad)
 
 This reference architecture shows a cluster (multi-ad) deployment of Elasticsearch and Kibana in Oracle Cloud Infrastructure.
 
@@ -36,7 +36,7 @@ If you don't have the required permissions and quota, contact your tenancy admin
 Now, you'll want a local copy of this repo. You can make that with the commands:
 
     git clone https://github.com/oracle-devrel/terraform-arch-oci-elastic.git
-    cd terraform-oci-arch-elastic/cluster/multi-ad
+    cd terraform-oci-arch-elastic/multi-ad
     ls
 
 ### Prerequisites

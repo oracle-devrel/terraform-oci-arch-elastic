@@ -43,7 +43,7 @@ resource "null_resource" "ESMasterNode1_BootStrap" {
     }
 
     content     = data.template_file.setup_esbootstrap.rendered
-    destination = "~/esbootstrap.sh"
+    destination = "/home/opc/esbootstrap.sh"
   }
   provisioner "remote-exec" {
     connection {
@@ -60,8 +60,8 @@ resource "null_resource" "ESMasterNode1_BootStrap" {
       bastion_private_key = tls_private_key.public_private_key_pair.private_key_pem
     }
     inline = [
-      "chmod +x ~/esbootstrap.sh",
-      "sudo ~/esbootstrap.sh",
+      "chmod +x /home/opc/esbootstrap.sh",
+      "sudo /home/opc/esbootstrap.sh",
     ]
   }
 }
@@ -85,7 +85,7 @@ resource "null_resource" "ESMasterNode2_BootStrap" {
     }
 
     content     = data.template_file.setup_esbootstrap.rendered
-    destination = "~/esbootstrap.sh"
+    destination = "/home/opc/esbootstrap.sh"
   }
   provisioner "remote-exec" {
     connection {
@@ -102,8 +102,8 @@ resource "null_resource" "ESMasterNode2_BootStrap" {
       bastion_private_key = tls_private_key.public_private_key_pair.private_key_pem
     }
     inline = [
-      "chmod +x ~/esbootstrap.sh",
-      "sudo ~/esbootstrap.sh",
+      "chmod +x /home/opc/esbootstrap.sh",
+      "sudo /home/opc/esbootstrap.sh",
     ]
   }
 }
@@ -127,7 +127,7 @@ resource "null_resource" "ESMasterNode3_BootStrap" {
     }
 
     content     = data.template_file.setup_esbootstrap.rendered
-    destination = "~/esbootstrap.sh"
+    destination = "/home/opc/esbootstrap.sh"
   }
   provisioner "remote-exec" {
     connection {
@@ -144,8 +144,8 @@ resource "null_resource" "ESMasterNode3_BootStrap" {
       bastion_private_key = tls_private_key.public_private_key_pair.private_key_pem
     }
     inline = [
-      "chmod +x ~/esbootstrap.sh",
-      "sudo ~/esbootstrap.sh",
+      "chmod +x /home/opc/esbootstrap.sh",
+      "sudo /home/opc/esbootstrap.sh",
     ]
   }
 }
@@ -169,7 +169,7 @@ resource "null_resource" "ESDataNode1_BootStrap" {
     }
 
     content     = data.template_file.setup_esbootstrap.rendered
-    destination = "~/esbootstrap.sh"
+    destination = "/home/opc/esbootstrap.sh"
   }
   provisioner "remote-exec" {
     connection {
@@ -186,8 +186,8 @@ resource "null_resource" "ESDataNode1_BootStrap" {
       bastion_private_key = tls_private_key.public_private_key_pair.private_key_pem
     }
     inline = [
-      "chmod +x ~/esbootstrap.sh",
-      "sudo ~/esbootstrap.sh",
+      "chmod +x /home/opc/esbootstrap.sh",
+      "sudo /home/opc/esbootstrap.sh",
     ]
   }
 }
@@ -211,7 +211,7 @@ resource "null_resource" "ESDataNode2_BootStrap" {
     }
 
     content     = data.template_file.setup_esbootstrap.rendered
-    destination = "~/esbootstrap.sh"
+    destination = "/home/opc/esbootstrap.sh"
   }
   provisioner "remote-exec" {
     connection {
@@ -228,8 +228,8 @@ resource "null_resource" "ESDataNode2_BootStrap" {
       bastion_private_key = tls_private_key.public_private_key_pair.private_key_pem
     }
     inline = [
-      "chmod +x ~/esbootstrap.sh",
-      "sudo ~/esbootstrap.sh",
+      "chmod +x /home/opc/esbootstrap.sh",
+      "sudo /home/opc/esbootstrap.sh",
     ]
   }
 }
@@ -253,7 +253,7 @@ resource "null_resource" "ESDataNode3_BootStrap" {
     }
 
     content     = data.template_file.setup_esbootstrap.rendered
-    destination = "~/esbootstrap.sh"
+    destination = "/home/opc/esbootstrap.sh"
   }
   provisioner "remote-exec" {
     connection {
@@ -270,8 +270,8 @@ resource "null_resource" "ESDataNode3_BootStrap" {
       bastion_private_key = tls_private_key.public_private_key_pair.private_key_pem
     }
     inline = [
-      "chmod +x ~/esbootstrap.sh",
-      "sudo ~/esbootstrap.sh",
+      "chmod +x /home/opc/esbootstrap.sh",
+      "sudo /home/opc/esbootstrap.sh",
     ]
   }
 }

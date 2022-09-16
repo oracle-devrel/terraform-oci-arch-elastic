@@ -9,11 +9,11 @@ output "BastionPublicIP" {
 }
 
 output "Kibana_URL_via_LBaaS" {
-  value = "http://${oci_load_balancer_load_balancer.ES-LB.ip_addresses[0]}:${var.KibanaPort}/"
+  value = "http://${oci_load_balancer_load_balancer.ES-LB.ip_address_details[0].ip_address}:${var.KibanaPort}/"
 }
 
 output "Elasticsearch_URL_via_LBaaS" {
-  value = "http://${oci_load_balancer_load_balancer.ES-LB.ip_addresses[0]}:${var.ESDataPort}/"
+  value = "http://${oci_load_balancer_load_balancer.ES-LB.ip_address_details[0].ip_address}:${var.ESDataPort}/"
 }
 
 output "generated_ssh_private_key" {

@@ -10,7 +10,7 @@ variable "compartment_ocid" {}
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "2.1"
+  default     = "2.2"
 }
 
 variable "BastionShape" {
@@ -77,7 +77,7 @@ variable "instance_os" {
 
 variable "linux_os_version" {
   description = "Operating system version for all Linux instances"
-  default     = "8"
+  default     = "9"
 }
 
 variable "VCN-CIDR" {
